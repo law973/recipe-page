@@ -1,6 +1,6 @@
-# Frontend Mentor - Recipe page solution
+# Frontend Mentor - Recipe Page Solution
 
-This is my solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is my solution to the [Recipe Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -54,7 +54,7 @@ const proudOfThisFunc = () => {
 
 ### Continued development
 
-Working on this project has helped me to realize that I would like to continue working with ordered/unordered lists and tables more often so that I can become more familiar with their default structure so that I can style them faster.
+Working on this project has helped me to realize that I would like to continue working with ordered/unordered lists and tables more often so that I can become more familiar with their default structure and style them faster.
 
 ## Author
 
