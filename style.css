@@ -67,9 +67,11 @@ h3 {
     margin-top: 0;
 }
 
+/* Styling for the image */
 img {
     max-width: 100%;
 
+    /* Image has a limited height and rounded borders on mobile landscape orientation */
     @media screen and (orientation: landscape) {
         border-radius: 10px;
         max-height: 200px;
@@ -78,6 +80,7 @@ img {
     }
 
     /* BREAKPOINT (Desktop) */
+    /* Adds rounded corners on desktop displays and ensures the image displays at full height */
     @media screen and (min-width: 992px) { 
         border-radius: 10px;
         max-height: none;
@@ -89,11 +92,12 @@ li {
     padding-bottom: 10px;
 }
 
-
+/* Creates space between list item numbers and the left edge of the card */
 ol {
     padding-left: 21px;
 }
 
+    /* Creates space between list items and their numbers */
     ol li {
         padding-left: 17px;
     }
@@ -103,6 +107,11 @@ ol {
             color: var(--brown-800);
             font-weight: bold;
         }
+
+/* Specific font size for paragraphs */
+p {
+    font-size: 16px;
+}
 
 /* Sets specific font weight for strong and b */
 strong, b {

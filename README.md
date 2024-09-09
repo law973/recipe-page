@@ -17,7 +17,7 @@ This is my solution to the [Recipe Page challenge on Frontend Mentor](https://ww
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot/screenshot.png)
 
 ### Links
 
@@ -34,27 +34,30 @@ This is my solution to the [Recipe Page challenge on Frontend Mentor](https://ww
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to create unordered lists with bullet points that are vertically centered relative even when list items span multiple lines (as opposed to using the default bullet points that line up with the first line of a list item). 
 
-To see how you can add code snippets, see below:
+Changing the display style for the list items of an unordered list removes their default display style (list-item), which in turn removes the default bullet points. With the new display style, flex, items (and hence the new bullet point) can then be aligned to the center.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+ul li {
+  align-items: center;
+  display: flex;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+With the default bullet removed and list items now being centered vertically, the custom bullet is then created.
+
+```css
+ul li::before {
+  color: var(--brown-800);
+  content: "\2022";
+  margin-right: 24px;
 }
 ```
 
 ### Continued development
 
-Working on this project has helped me to realize that I would like to continue working with ordered/unordered lists and tables more often so that I can become more familiar with their default structure and style them faster.
+Building this project has helped me to realize that I would like to continue working with ordered/unordered lists and tables more often so that I can become more familiar with their default structure and style them faster.
 
 ## Author
 
