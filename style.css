@@ -25,8 +25,11 @@
 }
 
 body {
+    align-items: center;
     background-color: var(--stone-100);
     color: var(--stone-600);
+    display: flex;
+    flex-direction: column;
     font-family: 'Outfit';
     margin: 0;
 }
@@ -58,6 +61,11 @@ h3 {
 
 img {
     max-width: 100%;
+
+    /* Desktop Breakpoint */
+    @media screen and (min-width: 992px) { 
+        border-radius: 10px;
+    }
 }
 
 li {
@@ -129,7 +137,21 @@ ul {
 
 .card {
     background-color: var(--white);
+    max-width: fit-content;
     width: 100%;
+
+    /* Desktop Breakpoint */
+    @media screen and (min-width: 992px) { 
+        border-radius: 25px;
+        margin: 120px auto;
+    }
+}
+
+.card-image {
+    /* Desktop Breakpoint */
+    @media screen and (min-width: 992px) { 
+        padding: 30px 32px 0px 32px;
+    }
 }
 
 .card-text {
