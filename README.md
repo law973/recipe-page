@@ -21,7 +21,7 @@ This is my solution to the [Recipe Page challenge on Frontend Mentor](https://ww
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/recipe-page-with-mobile-first-design-and-semantic-html-anhaWFucbK)
 - Live Site URL: [GitHub Pages](https://law973.github.io/recipe-page/)
 
 ## My process
