@@ -36,6 +36,10 @@ body {
     flex-direction: column;
     font-family: 'Outfit';
     margin: 0;
+
+    text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 /* Centers footer information horizontally */
@@ -107,11 +111,6 @@ ol {
             color: var(--brown-800);
             font-weight: bold;
         }
-
-/* Specific font size for paragraphs */
-p {
-    font-size: 16px;
-}
 
 /* Sets specific font weight for strong and b */
 strong, b {
