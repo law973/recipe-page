@@ -34,9 +34,9 @@ This is my solution to the [Recipe Page challenge on Frontend Mentor](https://ww
 
 ### What I learned
 
-I learned how to create unordered lists with bullet points that are vertically centered relative even when list items span multiple lines (as opposed to using the default bullet points that line up with the first line of a list item). 
+I learned how to create unordered lists with bullet points that are vertically centered even when list items span multiple lines (as opposed to using the default bullet points that line up with the first line of a list item). 
 
-Changing the display style for the list items of an unordered list removes their default display style (list-item), which in turn removes the default bullet points. With the new display style, flex, items (and hence the new bullet point) can then be aligned to the center.
+Changing the display style for the list items of an unordered list removes their default display style (list-item), which in turn removes the default bullet points. With the new display style, flex, items (and hence the new bullet point) can then be aligned to the center:
 
 ```css
 ul li {
@@ -45,7 +45,7 @@ ul li {
 }
 ```
 
-With the default bullet removed and list items now being centered vertically, the custom bullet is then created.
+With the default bullet removed and list items now being centered vertically, the custom bullet is then created:
 
 ```css
 ul li::before {
@@ -55,9 +55,18 @@ ul li::before {
 }
 ```
 
+Also, when testing the site on my phone, I discovered that Safari will sometimes enlarge text if it thinks it may be too small. Due to this, when putting the phone into landscape orientation, the text of the paragraph elements and the ordered list ended up much larger than it should have been and was inconsistent with the rest of the page. I was able to solve this issue with some lines that deal with "text-size-adjust":
+
+```css
+text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+```
+
 ### Continued development
 
-Building this project has helped me to realize that I would like to continue working with ordered/unordered lists and tables more often so that I can become more familiar with their default structure and style them faster.
+Building this project has helped me to realize that I would like to continue working with ordered/unordered lists and tables more often so that I can become more familiar with their default structures and style them faster.
 
 ## Author
 

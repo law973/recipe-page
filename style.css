@@ -49,6 +49,7 @@ footer {
 }
 
 /* Styling for h1 */
+/* Space between lines is decreased to resemble the original design */
 h1 {
     color: var(--stone-900);
     font-family: 'Young Serif';
