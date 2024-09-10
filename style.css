@@ -1,11 +1,13 @@
 /* Font used for regular text and h3 */
 @font-face {
+    font-display: swap;
     font-family: 'Outfit';
     src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
 }
 
 /* Font used for h1 and h2 */
 @font-face {
+    font-display: swap;
     font-family: 'Young Serif';
     src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
 }
@@ -54,7 +56,7 @@ h1 {
     color: var(--stone-900);
     font-family: 'Young Serif';
     font-weight: 400;
-    line-height: 100%;
+    line-height: 1;
     margin-top: 0;
 }
 
@@ -63,13 +65,6 @@ h2 {
     color: var(--brown-800);
     font-family: 'Young Serif';
     font-weight: 400;
-}
-
-/* Styling for h3 */
-h3 {
-    color: var(--rose-800);
-    font-weight: 700;
-    margin-top: 0;
 }
 
 /* Styling for the image */
@@ -84,9 +79,8 @@ img {
         width: 100%;
     }
 
-    /* BREAKPOINT (Desktop) */
-    /* Adds rounded corners on desktop displays and ensures the image displays at full height */
-    @media screen and (min-width: 992px) { 
+    /* Adds rounded corners on larger displays and ensures the image displays at full height */
+    @media screen and (min-width: 730px) { 
         border-radius: 10px;
         max-height: none;
     }
@@ -169,12 +163,11 @@ ul {
 /* Styling for card */
 .card {
     background-color: var(--white);
-    max-width: fit-content;
+    max-width: 730px;
     width: 100%;
 
-    /* BREAKPOINT (Desktop) */
-    /* Provides rounded corners and space above/below card on desktop displays */
-    @media screen and (min-width: 992px) { 
+    /* Provides rounded corners and space above/below card on larger displays */
+    @media screen and (min-width: 730px) { 
         border-radius: 25px;
         margin: 120px auto;
     }
@@ -182,14 +175,15 @@ ul {
 
 /* Provides padding for image */
 .card__image {
+    padding: none;
+
     /* Provides padding when viewing site in mobile landscape orientation */
     @media screen and (orientation: landscape) {
         padding: 20px 32px 0px 32px;
     }
 
-    /* BREAKPOINT (Desktop) */
-    /* Provides padding when viewing site on desktop displays */
-    @media screen and (min-width: 992px) {
+    /* Provides padding when viewing site on larger displays */
+    @media screen and (min-width: 730px) {
         padding: 30px 32px 0px 32px;
     }
 }
@@ -221,6 +215,15 @@ ul {
     border-radius: 10px;
     padding: 20px 25px;
 }
+
+    /* Different styling for h2 in Preparation section */
+    .section__preparation h2 {
+        color: var(--rose-800);
+        font-family: 'Outfit';
+        font-size: 1.17rem;
+        font-weight: 700;
+        margin-top: 0;
+    }
 
     /* Provides different color for the bullet points in the Preparation section */
     .section__preparation li::before {
